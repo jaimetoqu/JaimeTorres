@@ -57,7 +57,7 @@ public class EmailFragment extends Fragment {
                 if(msg.trim().length() > 0) {
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setType("*/*");
-                    intent.setData(Uri.parse("mailto"));
+                    intent.setData(Uri.parse("mailto:"));
                     intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"jaimetoqu@gmail.com"});
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Contacto");
                     intent.putExtra(Intent.EXTRA_TEXT, msg);
