@@ -34,7 +34,7 @@ public class ContactActivity extends AppCompatActivity {
             }
         });
 
-        TextView phoneTv = (TextView) findViewById(phoneTv);
+        TextView phoneTv = (TextView) findViewById(R.id.phoneTv);
         phoneTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
