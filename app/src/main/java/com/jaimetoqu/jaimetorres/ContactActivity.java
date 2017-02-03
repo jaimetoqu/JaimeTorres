@@ -24,7 +24,17 @@ public class ContactActivity extends AppCompatActivity {
             }
         });
 
-        TextView phoneTv = (TextView) findViewById(R.id.phoneTv);
+        TextView githubTv = (TextView) findViewById(R.id.githubTv);
+        githubTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent githubIntent = new Intent(Intent.ACTION_VIEW);
+                githubIntent.setData(Uri.parse("http://github.com/jaimetoqu"));
+                startActivity(githubIntent);
+            }
+        });
+
+        TextView phoneTv = (TextView) findViewById(phoneTv);
         phoneTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
