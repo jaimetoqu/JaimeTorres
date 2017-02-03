@@ -18,6 +18,12 @@
         style="@style/ContactTv"/>
 
     <TextView
+        android:id="@+id/githubTv"
+        style="@style/ContactTv"
+        android:drawableLeft="@mipmap/github"
+        android:text="Github"/>
+
+    <TextView
         android:id="@+id/phoneTv"
         style="@style/ContactTv"
         android:drawableLeft="@mipmap/ic_phone_black_24dp"
